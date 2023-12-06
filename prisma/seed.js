@@ -15,7 +15,7 @@ const seed = async () => {
       firstName: "jt",
       lastName: "pricone",
       username: "jtp",
-      password: "$2a$10$XEmTvHxLbzLg.TQmbAQL0OmtAdyIQHr0XZmNWymTizvCRIcB6CbZe",
+      password: await bcrypt.hash("jt123", 10),
       email: "jtp@yes.com",
       photos: {
         create: {
