@@ -10,7 +10,6 @@ router.get("/", (req, res) => {
   res.send("comment route working")
 })
 
-//post and delete comments
 
 router.get("/comments", async (req, res) => {
   try{

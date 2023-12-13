@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server:dev": "nodemon ./server/index.js"
+    "server:dev": "nodemon ./server/index.js",
+    "client:dev": "cd client && cd photos && npm run dev",
+    "dev": "concurrently 'npm run server:dev' 'npm run client:dev'  "
   },
   "prisma": {
     "seed": "node prisma/seed.js"
